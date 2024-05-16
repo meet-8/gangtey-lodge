@@ -1,0 +1,32 @@
+@if ($tsContetData)
+    @foreach ($tsContetData as $content)
+        @if ($content->layout == 'hero_slider')
+            @include('partials.sections.hero-banner')
+        {{-- @elseif($content->layout == 'simple_content')
+            @include('partials.sections.simple_content')
+        @elseif($content->layout == 'image_with_content')
+            @include('partials.sections.image_with_content')
+        @elseif($content->layout == 'our_process')
+            @include('partials.sections.our_process')
+        @elseif($content->layout == 'inner_banner')
+            @include('partials.sections.inner_banner')
+        @elseif($content->layout == 'our_partners')
+            @include('partials.sections.our_partners')
+        @elseif($content->layout == 'our_location')
+            @include('partials.sections.our_location')
+        @elseif($content->layout == 'contact_information')
+            @include('partials.sections.contact_information')
+        @elseif($content->layout == 'contact_us_form')
+            @include('partials.sections.contact_us_form')
+        @elseif($content->layout == 'service_list')
+            @include('partials.sections.service_list')
+        @elseif($content->layout == 'location_list')
+            @include('partials.sections.location_list')
+        @elseif($content->layout == 'news_list')
+            @include('partials.sections.news_list')
+        @elseif($content->layout == 'general_content')
+            @include('partials.sections.general_content')     --}}
+        @endif
+    @endforeach
+@else
+@endif

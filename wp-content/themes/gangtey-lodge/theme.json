@@ -1,0 +1,236 @@
+{
+  "__generated__": "⚠️ This file is generated. Do not edit.",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "background": {
+      "backgroundImage": true
+    },
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "color": "transparent",
+          "name": "Transparent",
+          "slug": "transparent"
+        },
+        {
+          "color": "#ffffff",
+          "name": "White",
+          "slug": "white"
+        },
+        {
+          "color": "#000000",
+          "name": "Black 100",
+          "slug": "black-100"
+        },
+        {
+          "color": "#54595f",
+          "name": "Black 200",
+          "slug": "black-200"
+        },
+        {
+          "color": "#4a4a4a",
+          "name": "Black 300",
+          "slug": "black-300"
+        },
+        {
+          "color": "#1a1a1a",
+          "name": "Black 400",
+          "slug": "black-400"
+        },
+        {
+          "color": "#f0ece9",
+          "name": "Gray 100",
+          "slug": "gray-100"
+        },
+        {
+          "color": "#faf7f2",
+          "name": "Gray 200",
+          "slug": "gray-200"
+        },
+        {
+          "color": "#a6a6a6",
+          "name": "Gray 300",
+          "slug": "gray-300"
+        },
+        {
+          "color": "#9e523a",
+          "name": "Red",
+          "slug": "red"
+        },
+        {
+          "color": "#ae9364",
+          "name": "Gold",
+          "slug": "gold"
+        },
+        {
+          "color": "#eeebe7",
+          "name": "Lightgold",
+          "slug": "lightgold"
+        },
+        {
+          "color": "#ae624a",
+          "name": "Brown",
+          "slug": "brown"
+        }
+      ]
+    },
+    "custom": {
+      "spacing": {},
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "Cormorant Unicase",
+          "name": "Cormorant Unicase",
+          "slug": "heading"
+        },
+        {
+          "fontFamily": "Antic",
+          "name": "Antic",
+          "slug": "primary"
+        },
+        {
+          "fontFamily": "Julius Sans One",
+          "name": "Julius Sans One",
+          "slug": "secondary"
+        },
+        {
+          "fontFamily": "AvenirLTStd-Book",
+          "name": "AvenirLTStd-Book",
+          "slug": "tertiary"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "10",
+          "size": "10px",
+          "slug": "10"
+        },
+        {
+          "name": "11",
+          "size": "11px",
+          "slug": "11"
+        },
+        {
+          "name": "12",
+          "size": "12px",
+          "slug": "12"
+        },
+        {
+          "name": "13",
+          "size": "13px",
+          "slug": "13"
+        },
+        {
+          "name": "14",
+          "size": "14px",
+          "slug": "14"
+        },
+        {
+          "name": "15",
+          "size": "15px",
+          "slug": "15"
+        },
+        {
+          "name": "16",
+          "size": "16px",
+          "slug": "16"
+        },
+        {
+          "name": "18",
+          "size": "18px",
+          "slug": "18"
+        },
+        {
+          "name": "19",
+          "size": "19px",
+          "slug": "19"
+        },
+        {
+          "name": "20",
+          "size": "20px",
+          "slug": "20"
+        },
+        {
+          "name": "22",
+          "size": "22px",
+          "slug": "22"
+        },
+        {
+          "name": "26",
+          "size": "26px",
+          "slug": "26"
+        },
+        {
+          "name": "28",
+          "size": "28px",
+          "slug": "28"
+        },
+        {
+          "name": "30",
+          "size": "30px",
+          "slug": "30"
+        },
+        {
+          "name": "32",
+          "size": "32px",
+          "slug": "32"
+        },
+        {
+          "name": "35",
+          "size": "35px",
+          "slug": "35"
+        },
+        {
+          "name": "36",
+          "size": "36px",
+          "slug": "36"
+        },
+        {
+          "name": "38",
+          "size": "38px",
+          "slug": "38"
+        },
+        {
+          "name": "45",
+          "size": "45px",
+          "slug": "45"
+        },
+        {
+          "name": "47",
+          "size": "47px",
+          "slug": "47"
+        },
+        {
+          "name": "60",
+          "size": "60px",
+          "slug": "60"
+        }
+      ]
+    }
+  }
+}
