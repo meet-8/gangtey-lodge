@@ -1,6 +1,7 @@
-@tailwind utilities;
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'swiper/swiper-bundle.min.css';
 
 @font-face {
     font-family: 'AvenirLTStd-Book';

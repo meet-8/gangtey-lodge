@@ -23,10 +23,10 @@ domReady(async () => {
     $('.menu-icon a').on('click', function () {
       $('body').toggleClass('menu-open');
     });
-  });
 
-  $('.menuclose').click(function () {
-    $('body').removeClass('menu-open');
+    $('.menuclose').click(function () {
+      $('body').removeClass('menu-open');
+    });
 
     // Tabs
 
@@ -82,8 +82,8 @@ domReady(async () => {
         grabCursor: true,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.explore-button-next',
-          prevEl: '.explore-button-prev',
+          nextEl: '.explore-swiper-button-next',
+          prevEl: '.explore-swiper-button-prev',
         },
         breakpoints: {
           100: {

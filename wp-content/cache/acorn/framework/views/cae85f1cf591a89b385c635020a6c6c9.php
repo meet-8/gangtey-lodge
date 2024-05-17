@@ -20,8 +20,13 @@
         <div
             class="banner-content flex-col absolute z-9 top-0 h-full flex justify-center items-center w-full text-center">
             <div class="banner-title px-15">
-                <h1 class="text-white">Authentic Luxury in </br> Undiscovered Bhutan</h1>
-                <a href="#" class="btn btn-transparent mt-20 inline-block">explore your stay</a>
+                <?php if(isset($content->title) && $content->title): ?>
+                    <h1 class="text-white"><?php echo $content->title; ?></h1>
+                <?php endif; ?>
+                <?php if(isset($content->button) && $content->button): ?>
+                    <a href="<?php echo $content->button['url']; ?>"
+                        class="btn btn-transparent mt-20 inline-block"><?php echo $content->button['title']; ?></a>
+                <?php endif; ?>
             </div>
         </div>
     </section>
