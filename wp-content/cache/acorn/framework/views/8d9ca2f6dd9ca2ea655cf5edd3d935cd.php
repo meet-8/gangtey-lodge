@@ -12,6 +12,8 @@
             <?php echo $__env->make('partials.sections.full-image-content', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php elseif($content->layout == 'page_grid_section'): ?>
             <?php echo $__env->make('partials.sections.page-grid-sectiont', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php elseif($content->layout == 'testimonial_section'): ?>
+            <?php echo $__env->make('partials.sections.testimonial-section', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php endif; ?>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 <?php else: ?>

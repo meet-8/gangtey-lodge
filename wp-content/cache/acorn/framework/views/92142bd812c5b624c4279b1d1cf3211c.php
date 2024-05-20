@@ -1,5 +1,6 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
-    <section class="explore-img-grid py-80 lgscreen:py-40">
+    <section class="explore-img-grid py-80 lgscreen:py-40 <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
+        <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
         <div class="section-title section-title-center">
             <img src=<?= \Roots\asset('images/Gangtey-Lodge-Entrance.png'); ?> class="w-[308px] mx-auto" alt="Gangtey Lodge Entrance">
             <div class="title-black">

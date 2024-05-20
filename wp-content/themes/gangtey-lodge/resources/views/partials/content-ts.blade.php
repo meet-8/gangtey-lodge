@@ -12,6 +12,8 @@
             @include('partials.sections.full-image-content')
         @elseif($content->layout == 'page_grid_section')
             @include('partials.sections.page-grid-sectiont')
+        @elseif($content->layout == 'testimonial_section')
+            @include('partials.sections.testimonial-section')
         @endif
     @endforeach
 @else

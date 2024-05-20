@@ -1,5 +1,6 @@
 @if (isset($content->hide_section) && $content->hide_section == 'no')
-    <section class="explore-img-grid py-80 lgscreen:py-40">
+    <section class="explore-img-grid py-80 lgscreen:py-40 @if ($content->extra_class) {!! $content->extra_class !!} @endif"
+        @if ($content->id) id="{!! $content->id !!}" @endif>
         <div class="section-title section-title-center">
             <img src=@asset('images/Gangtey-Lodge-Entrance.png') class="w-[308px] mx-auto" alt="Gangtey Lodge Entrance">
             <div class="title-black">

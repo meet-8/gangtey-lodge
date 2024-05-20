@@ -128,6 +128,30 @@ class TsContent extends Composer
                         'hide_section' => $content['hide_section'],
                     ];
                     array_push($data, $this_content);
+                } elseif ($content['acf_fc_layout'] == 'testimonial_section') {  
+                    $testimonials = array();
+                    $testimonials_args = array(
+                        'post_type' => 'testimonial',
+                        'post_status' => 'publish',
+                    );
+                    $testimonials_query = new \WP_Query($testimonials_args);
+                    if ($testimonials_query->have_posts()) {
+                        while ($testimonials_query->have_posts()) : $testimonials_query->the_post();
+                        $testimonials[] = array(
+                                'title' => get_the_title(),
+                                'content' => get_the_content(),
+                            );
+                        endwhile;
+                        wp_reset_postdata();
+                    }
+                    $this_content = (object) [
+                        'layout' => $content['acf_fc_layout'],
+                        'testimonials' => $testimonials,
+                        'id' => $content['id'],
+                        'extra_class' => $content['extra_class'],
+                        'hide_section' => $content['hide_section'],
+                    ];
+                    array_push($data, $this_content);
                 }
             }
         }
