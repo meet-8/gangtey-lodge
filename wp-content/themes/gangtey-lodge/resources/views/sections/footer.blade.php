@@ -6,7 +6,8 @@
             <div class="newsletter-form">
                 <div class="gform_wrapper">
                     <div class="gform_body">
-                        <form>
+                        {!! do_shortcode( '[contact-form-7 id="1b18c33" title="Footer form 1"]') !!}
+                        {{-- <form>
                             <div class="gform_body gform-body">
                                 <div class="gform_fields">
                                     <div id="field_1_1" class="gfield">
@@ -23,7 +24,7 @@
                             <div class="gform_footer top_label">
                                 <input type="submit" class="gform_button button" value="Sign Up">
                             </div>
-                        </form>
+                        </form> --}}
                     </div>
                 </div>
             </div>

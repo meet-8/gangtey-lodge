@@ -1,8 +1,19 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
+<?php if($content->style == 'style-2'): ?>
+    <?php
+        $style = '!px-0';
+        $padding = "";
+    ?>
+<?php else: ?>
+    <?php
+        $style = '';
+        $padding = "py-50";
+    ?>
+<?php endif; ?>
     <section
-        class="full-img-content bg-lightgold py-50 lgscreen:py-30 relative <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
+        class="full-img-content bg-lightgold <?php echo $padding; ?> lgscreen:py-30 relative <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
-        <div class="container-fluid relative">
+        <div class="container-fluid <?php echo $style; ?> relative">
             <div class="full-img-content-inner relative h-[585px] bg-cover"
                 <?php if(isset($content->image) && $content->image): ?> style="background-image: url('<?php echo $content->image['url']; ?>')" <?php endif; ?>>
                 <div class="relative z-9 h-full flex flex-col justify-center items-center px-20 text-center">

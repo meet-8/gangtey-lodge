@@ -1,8 +1,19 @@
 @if (isset($content->hide_section) && $content->hide_section == 'no')
+@if ($content->style == 'style-2')
+    @php
+        $style = '!px-0';
+        $padding = "";
+    @endphp
+@else
+    @php
+        $style = '';
+        $padding = "py-50";
+    @endphp
+@endif
     <section
-        class="full-img-content bg-lightgold py-50 lgscreen:py-30 relative @if ($content->extra_class) {!! $content->extra_class !!} @endif"
+        class="full-img-content bg-lightgold {!! $padding !!} lgscreen:py-30 relative @if ($content->extra_class) {!! $content->extra_class !!} @endif"
         @if ($content->id) id="{!! $content->id !!}" @endif>
-        <div class="container-fluid relative">
+        <div class="container-fluid {!! $style !!} relative">
             <div class="full-img-content-inner relative h-[585px] bg-cover"
                 @if (isset($content->image) && $content->image) style="background-image: url('{!! $content->image['url'] !!}')" @endif>
                 <div class="relative z-9 h-full flex flex-col justify-center items-center px-20 text-center">

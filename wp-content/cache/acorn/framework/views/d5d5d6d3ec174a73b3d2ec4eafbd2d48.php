@@ -6,24 +6,9 @@
             <div class="newsletter-form">
                 <div class="gform_wrapper">
                     <div class="gform_body">
-                        <form>
-                            <div class="gform_body gform-body">
-                                <div class="gform_fields">
-                                    <div id="field_1_1" class="gfield">
-                                        <input type="text" placeholder="Name">
-                                    </div>
-                                    <div id="field_1_2" class="gfield">
-                                        <input type="text" placeholder="Surname">
-                                    </div>
-                                    <div id="field_1_3" class="gfield">
-                                        <input type="text" placeholder="Email address">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gform_footer top_label">
-                                <input type="submit" class="gform_button button" value="Sign Up">
-                            </div>
-                        </form>
+                        <?php echo do_shortcode( '[contact-form-7 id="1b18c33" title="Footer form 1"]'); ?>
+
+                        
                     </div>
                 </div>
             </div>

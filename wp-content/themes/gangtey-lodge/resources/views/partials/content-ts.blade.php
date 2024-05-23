@@ -14,6 +14,14 @@
             @include('partials.sections.page-grid-sectiont')
         @elseif($content->layout == 'testimonial_section')
             @include('partials.sections.testimonial-section')
+        @elseif($content->layout == 'instagram_slider')
+            @include('partials.sections.instagram-slider')
+        @elseif($content->layout == 'inner_banner')
+            @include('partials.sections.inner-banner')
+        @elseif($content->layout == 'image_grid')
+            @include('partials.sections.image-grid')
+        @elseif($content->layout == 'content_with_slider')
+            @include('partials.sections.content-with-slider')
         @endif
     @endforeach
 @else

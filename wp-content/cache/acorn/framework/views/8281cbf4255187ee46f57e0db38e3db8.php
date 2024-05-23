@@ -1,5 +1,19 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
-    <section class="common-content py-80 lgscreen:py-40 <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
+
+    <?php if($content->background == 'gold'): ?>
+        <?php
+            $background = 'bg-lightgold';
+            $btn = 'btn-gold-link';
+        ?>
+    <?php else: ?>
+        <?php
+            $background = '';
+            $btn = 'btn-gold-border';
+        ?>
+    <?php endif; ?>
+
+
+    <section class="common-content py-80 lgscreen:py-40 <?php echo $background; ?> <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
         <div class="w-[1008px] mx-auto lgscreen:w-full px-20 text-center">
             <?php if(isset($content->logo) && $content->logo): ?>
@@ -18,7 +32,9 @@
             <?php endif; ?>
             <?php if(isset($content->button) && !empty($content->button)): ?>
                 <div class="btn-custom mt-30">
-                    <a href="<?php echo $content->button['url']; ?>" target="<?php echo e($content->button['target'] ? $content->button['target'] : '_self'); ?>" class="btn btn-gold-border"><?php echo $content->button['title']; ?></a>
+                    <a href="<?php echo $content->button['url']; ?>"
+                        target="<?php echo e($content->button['target'] ? $content->button['target'] : '_self'); ?>"
+                        class="btn <?php echo $btn; ?>"><?php echo $content->button['title']; ?></a>
                 </div>
             <?php endif; ?>
         </div>

@@ -14,6 +14,14 @@
             <?php echo $__env->make('partials.sections.page-grid-sectiont', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php elseif($content->layout == 'testimonial_section'): ?>
             <?php echo $__env->make('partials.sections.testimonial-section', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php elseif($content->layout == 'instagram_slider'): ?>
+            <?php echo $__env->make('partials.sections.instagram-slider', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php elseif($content->layout == 'inner_banner'): ?>
+            <?php echo $__env->make('partials.sections.inner-banner', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php elseif($content->layout == 'image_grid'): ?>
+            <?php echo $__env->make('partials.sections.image-grid', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php elseif($content->layout == 'content_with_slider'): ?>
+            <?php echo $__env->make('partials.sections.content-with-slider', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php endif; ?>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 <?php else: ?>
